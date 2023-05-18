@@ -2,7 +2,7 @@ const { nanoid } = require("nanoid");
 const { Storage } = require("@google-cloud/storage");
 
 const gcs = new Storage({
-  projectId: "feisty-truth-381413",
+  projectId: "--project-id--",
   keyFilename: "servicekey.json",
 });
 
@@ -12,7 +12,7 @@ const uploadImageHandler = async (request, h) => {
     const imageFile = request.payload.file;
     const filename = `${Date.now()}_${id}.jpg`;
 
-    await gcs.bucket("sortify-img").upload(imageFile.path, {
+    await gcs.bucket("--bucket-name--").upload(imageFile.path, {
       destination: filename,
     });
 
