@@ -1,13 +1,2 @@
 {
-  "type": "service_account",
-  "project_id": "feisty-truth-381413",
-  "private_key_id": "cb8250f6ad32e457e995e7d60d5b717067c3e379",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5hems2e7NvKd5\n55MxgzE1lr4oj8airPGw9V2j5oax/2CKOjz0G/TSej1xBCoYqCJtFv/e6tDOUN5y\nP+hBMHMrUV3FgFMu0XyGuAA4E99bvIh2d49mrEtcTiZNqpeIZeDhSNBPTR+p9fkE\n2Aa9TLH+ZIqcXqPsPCkjshv8Llbk25dW2rL/4EIcaGBBobxyQxLgpAAj8pyiqY+x\n+H+gka4ZVd2P3QosnzQ4S1P76FpxgmWDP9DCw4D27ek5+PAECgQ/vLL9C5jlS5pp\nKf2ZcvB7uFM7EeXTqcbSfwY+QjTk188MfEh6y80Q42bKXnGZdSWmqWITj92tOfui\ngMLBpymPAgMBAAECggEAJpetyXA4VgH1kM1UeEtDNFOcURG/j12MlXQlO5Ab2vE1\n4utEfL9ICXS2TUlBfImVR74uEfAk6ZY2/+s9ZDow6wTtDcWpCCc50Uh7ey7fGtU4\nSfSLFx+mOZhkLWncRdpzkkm0U5rGiHOLjq9lj4Fh0XqWvvqM/Ppy0GMfoTD+kHKm\nQ+cRDtfb72Xw2/KYNDGVybLRai3aqKwek3Vqn0bu1BcEmYS4M25d8Fyf+fogsGm7\naR6Z4mhF0SVfUXCWrrSKW2rz5YKZ3bdbg+6nxGaSWa+JOfC27AXhtWHBQYqGBD0I\n3A5wSSc85nbM/GMlWPCuyy1xBI3F6xTkd8ephA0DSQKBgQD222ivL1vbKwBp6Ojs\nyxusspuKJp/6L7xrUWoqTx0BeiAdbEk3lvoDwRlM2654gXDtiFjDRg+breKkspAg\nNOg25o8DdtKXGmEksuEh4rS7JQEQvCU34IcCWiq3OUAjyz2y7gT63fjud16MPLPX\njVveUiFDe+m9JzNG+K4lD1BV5QKBgQDAZPZABLPlUFmOBK6X1HzlQ4W+z3/frIqS\nZ7q0Px439Dh/efM4TU1IYANIew2cQuihQcBoVbKrveVPB4OzEsQeIccTsjD7U7pY\nqDd5ureyc5Ro1NqGFsyBq/9h+tDW2vBfvJvDeIQdHfv90Jt9jzmGgHyMcY1oCGLp\n+uwcZZ8KYwKBgFoK5B9qdeX2xHrdQwEEgP64U3XL6vSWLvMySjhOjTT5t/cjhX1q\na52s9K6NPxGjnW53GnF3/794aMBMhbfJtJ458RaBZAVL0P1S5j229NeCguX4ytab\n5oMcIpKcpmGoA8Rdf6GGEAPjtLAQgETywfzRFmMIMtUVFGYh1VudP19lAoGBAKWf\nxKWD5uIH87Bgs3SdRg+PuzlyI+EIBhrXFVFJ7Ne6dFC5SPo1AczGas0gsazNpLn9\ngofPDoruZNNN4sBr7U0LQvfftG8HuynLVkaCyNTkzuQYKS65vb/7s1RDuTjdLYUd\nNvJlc0Ylo+LyjIjgnWL+hTnaHyNp5M0MZ+piSTGFAoGATIsoX4KavC/ty56zDtTD\nVFouZme2Nv+baGd4Td3C/zDOlem3gGHD2gDICV14RkaRW+xqMoGRhYwijjU1nZrF\nzudNsb6yKnu3oA6Nke3UTj85XkTkPNuUjiU0gaaPw7b7xx8+aYMYw4f2hP7cn2l2\n2MkMQdvGVRzPfet36f4OhWg=\n-----END PRIVATE KEY-----\n",
-  "client_email": "sortify-storage-admin@feisty-truth-381413.iam.gserviceaccount.com",
-  "client_id": "115650219309478004542",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sortify-storage-admin%40feisty-truth-381413.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
 }
