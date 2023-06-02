@@ -24,7 +24,7 @@ const uploadImageHandler = async (request, h) => {
     await gcs.bucket(bucketName).upload(imageFile.path, {
       destination: filename,
     });
-    compressImageHandler(bucketName, filename);
+    await compressImageHandler(bucketName, filename);
     const imageUrl = `https://storage.googleapis.com/sortify-img/${filename}`;
 
     return imageUrl;
@@ -62,15 +62,16 @@ const predictImgHandler = async (request, h) => {
     let audio;
     const image = request.payload.file;
 
-    const respon = await axios.post(
-      `${servingUrl}/path/to/model:predict`,
-      image
-    );
+    // const respon = await axios.post(
+    //   `${servingUrl}/path/to/model:predict`,
+    //   image
+    // );
 
-    const predictions = respon.data.predictions[0];
-    // const respon = request.payload;
-    // const predictions = respon.predictions[0];
-    const classIndex = predictions.indexOf(Math.max(...predictions));
+    // const predictions = respon.data.predictions[0];
+    // // const respon = request.payload;
+    // // const predictions = respon.predictions[0];
+    // const classIndex = predictions.indexOf(Math.max(...predictions));
+    const classIndex = 1;
 
     switch (classIndex) {
       case 0:
