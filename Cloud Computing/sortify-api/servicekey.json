@@ -1,13 +1,3 @@
 {
-  "type": "service_account",
-  "project_id": "feisty-truth-381413",
-  "private_key_id": "87bbfad0d867395f2e3690d765a4610f866ebfed",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4OuDupUe03isi\nyiZTptFpBoYgXEN/XATD+lGsXzHLhDaEQLD/DX1anRIzoos2Vnz1KidHjo60a1Yl\n/j7bbAiudy1RyNq3DniS+HiDoZoOOwuFCQjRbPLJ1y8l0wMQi9tUwLSbQNdUn9F7\nEBlCF0A0AuTCD0YEwFXQlZn4uPmtimCAyxBql3LQDkZ/kYz5Lvfxg4ypndlGt/Ho\nJZ/7lfO4ip+7hGlVEGsmfZ3cqoRjY8QfpkPd/iyyhplKuRzN1m7x8r3cGfQxOWsd\nZrYbEGoOqJpvLudZPbKs3IiRmGGuQWD6MB/kPVdiM6HPN4M06qxXXfyyRyBtZErw\n3uWGt5NfAgMBAAECggEAEi1LrHrQkzcJFi160EMZI0h6Va60wYKl57jcHmqQDQP2\nUGCE9iKcbSMqkhSmBqOhlZuQn5NLCjW9nLxenaNQTKJumBn+ARS47yCmh1pGSxl7\n8/wlthVj8706+3uRMFc+5I2qOYKRca8zvyAiAIQvGKf2bnKNAS1W6jXF03qwtnSn\nQrrcgY6jzeBgjG9WFYe+R8kg9Ljck2oQsbpeHw7jD7xQ60K8KQaeYW65jz4f1oxX\ncW/FH7oeEcBcEx3snGYUQqWvgiilafJBOxP8HszWu9nmbv0I7/6gVinxiq1I8dSq\nwpp7r4ubnPzJxxoYFlClYZJuiokehyEVMSnGdf5N/QKBgQDp8OSfZ7tcvNFNvilB\nt0Kzh1miKSWHcMwQywab+/sMKhLUhg56sX9eedPEGV9tH4mGSWhRNWIogpsWG5bb\nC6rWCqehKH+xOpzQDCejwHiZYNSrl0tmhYj1da2bmhbMnqsazmuEmQGbAxXv+XLA\nCWUGUiM1Ub7i6LBihKNKT9nB5QKBgQDJmgLArW4wHlshK/123zeLEdqMAuijzcep\nqygqwrvszdTCglA0lClP+gNOXYZXfM2eet1loU8AL+cqErAdTx5rpHJY0CDOwtBY\nADGs82oqbiCzhWVo6bxXMttZIWMFIYYVoqEg5eweiGtp9LULQvvHhMqnS/VemYlJ\n+/s4Z7X78wKBgBTgAgaXYwircKHXTicnCzSp5z2pHkgvsIXvF+/jVEuJlZSRQcmA\n/TSY+mSNPw6lucfZ1Q0qDlA/F0epvpRdPilLWhnvWzWdXVDTRNY/3oMROOj23yuO\nzuHYVl2EKnSn0+zYbo+ud441gEehorOwIuuleK7RVI865EJmQ4vmBDBhAoGAV90y\nw+0ScBBa4Vs9zdg9afQvDwSZhgLCuXTqPbC/nNacmuWWtUO5uayaUkY6rdir+R1N\nbuTd/JPkKRcaALwh4wI5//E9yz9m9GOpQtqX88QppnRGHXJ5bnuw0+jUMkFJIhbO\nKPtsbGZCglxvp2fbOjrq4/0cBM3f4wnalNvGmfcCgYEApzWW89XYKZ2vrD0Z9NlJ\nhPYejN3ygx/VR7rRKATpRJYI79cyfDUuKdn8s+LjFBWOiqmSA0PS8XvKyhE9ljKF\nnjOK4MGr8G9MIU4p/XH1r/0dZzwo9iaTkXYDxYGnlZ93YAX9JXoLlEzhjREkWlJY\nrkJB/J+AZ8k5g9k4vX0m4DY=\n-----END PRIVATE KEY-----\n",
-  "client_email": "storage-admin@feisty-truth-381413.iam.gserviceaccount.com",
-  "client_id": "106691894349468023862",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-admin%40feisty-truth-381413.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+
 }
