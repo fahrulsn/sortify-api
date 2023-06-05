@@ -2,7 +2,6 @@ const Hapi = require("@hapi/hapi");
 const { Storage } = require("@google-cloud/storage");
 const axios = require("axios");
 const sharp = require("sharp");
-const fs = require("fs");
 const { nanoid } = require("nanoid");
 
 const projectId = "feisty-truth-381413";
@@ -25,7 +24,7 @@ const uploadImageHandler = async (request, h) => {
       destination: filename,
     });
     await compressImageHandler(bucketName, filename);
-    const imageUrl = `https://storage.googleapis.com/sortify-img/${filename}`;
+    const imageUrl = `https://storage.googleapis.com/${bucketName}/${filename}`;
 
     return imageUrl;
   } catch (error) {
@@ -62,16 +61,15 @@ const predictImgHandler = async (request, h) => {
     let audio;
     const image = request.payload.file;
 
-    // const respon = await axios.post(
-    //   `${servingUrl}/path/to/model:predict`,
-    //   image
-    // );
+    const respon = await axios.post(
+      `${servingUrl}/path/to/model:predict`,
+      image
+    );
 
-    // const predictions = respon.data.predictions[0];
-    // // const respon = request.payload;
-    // // const predictions = respon.predictions[0];
-    // const classIndex = predictions.indexOf(Math.max(...predictions));
-    const classIndex = 1;
+    // const respon = request.payload;
+    const predictions = respon.predictions[0];
+    const classIndex = predictions.indexOf(Math.max(...predictions));
+    // const classIndex = 0;
 
     switch (classIndex) {
       case 0:
@@ -97,7 +95,7 @@ const predictImgHandler = async (request, h) => {
 
 const init = async () => {
   const server = Hapi.server({
-    port: 5000,
+    port: 3000,
     host: "localhost",
     routes: {
       cors: {
@@ -108,8 +106,19 @@ const init = async () => {
 
   server.route([
     {
+      method: "GET",
+      path: "/api",
+      options: {
+        handler: () => {
+          return {
+            status: "running",
+          };
+        },
+      },
+    },
+    {
       method: "POST",
-      path: "/",
+      path: "/api",
       options: {
         handler: predictImgHandler,
         payload: {
