@@ -5,7 +5,7 @@ const sharp = require("sharp");
 const { nanoid } = require("nanoid");
 
 const projectId = "feisty-truth-381413";
-const servingUrl = "";
+const servingUrl = "http://127.0.0.1:8000/predict";
 const bucketName = "sortify-img";
 const audioOrganik = "audio/organik-voice.mp3";
 const audioAnorganik = "audio/anorganik-voice.mp3";
@@ -59,26 +59,35 @@ const predictImgHandler = async (request, h) => {
     let descriptions;
     let classResult;
     let audio;
-    const image = request.payload.file;
+    const file = request.payload.file;
 
-    const respon = await axios.post(
-      `${servingUrl}/path/to/model:predict`,
-      image
-    );
-
+    const payload = { url: imageUrl };
+    // const respon = await axios.post(
+    //   `${servingUrl}/v1/models/waste-classifier:predict`,
+    //   payload
+    // );
+    const respon = await axios.post(servingUrl, payload);
     // const respon = request.payload;
-    const predictions = respon.predictions[0];
+    const predictions = respon.data.predictions[0];
     const classIndex = predictions.indexOf(Math.max(...predictions));
     // const classIndex = 0;
 
+    console.log(classIndex);
     switch (classIndex) {
-      case 0:
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
         audio = audioOrganik;
         classResult = "Organik";
         descriptions =
           "Sampah organik adalah jenis sampah yang berasal dari bahan-bahan yang dapat terurai secara alami, seperti sisa makanan, daun, rumput, kulit buah, dan lain sebagainya. Daur ulang sampah organik melibatkan proses pengolahan kembali sisa-sisa organik tersebut menjadi bahan yang berguna. Metode daur ulang sampah organik antara lain meliputi pengomposan dan pembuatan biogas. Daur ulang sampah organik membantu mengurangi volume sampah, mengurangi emisi gas rumah kaca, serta menghasilkan bahan yang dapat digunakan kembali, seperti kompos yang berguna sebagai pupuk organik atau biogas yang dapat digunakan sebagai sumber energi alternatif.";
         break;
-      case 1:
+      case 0:
+      case 2:
+      case 4:
+      case 6:
         audio = audioAnorganik;
         classResult = "Anorganik";
         descriptions =
